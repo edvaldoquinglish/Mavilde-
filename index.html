@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💚 Para Mavilde 💚</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Partículas de fundo -->
+  <canvas id="canvas-particles"></canvas>
+
+  <!-- Tela de entrada -->
+  <div id="entrance-screen">
+    <div class="entrance-inner">
+      <div class="terminal-line" id="terminal-boot"></div>
+      <button id="enter-btn" class="enter-btn hidden">
+        <span class="btn-text">[ Abrir meu coração ]</span>
+        <span class="btn-glow"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Site principal -->
+  <main id="main-site" class="hidden">
+
+    <!-- Player de música invisível -->
+    <audio id="player" preload="auto"></audio>
+
+    <!-- Indicador de música -->
+    <div id="music-bar">
+      <div id="music-equalizer">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <span id="music-label">♪ tocando...</span>
+    </div>
+
+    <!-- Seção 1: Hero -->
+    <section class="section" id="section-hero">
+      <div class="verse-box" id="verse-hero">
+        <p class="verse-line typed" data-text="Em algum loop infinito do universo,"></p>
+        <p class="verse-line typed" data-text="meu coração te encontrou —"></p>
+        <p class="verse-line typed" data-text="não foi acaso,"></p>
+        <p class="verse-line typed" data-text="foi o destino a compilar."></p>
+      </div>
+      <div class="scroll-hint">↓</div>
+    </section>
+
+    <!-- Seção 2: Poesia 1 -->
+    <section class="section" id="section-poem1">
+      <div class="poem-card">
+        <span class="poem-tag">// amor.js</span>
+        <p class="poem-text">
+          Se eu fosse um algoritmo,<br/>
+          tu serias minha condição de parada —<br/>
+          o único resultado<br/>
+          que faz sentido retornar.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção 3: Poesia 2 -->
+    <section class="section" id="section-poem2">
+      <div class="poem-card alt">
+        <span class="poem-tag">/* estrelas.css */</span>
+        <p class="poem-text">
+          Cada estrela no céu<br/>
+          é um bit da memória do cosmos —<br/>
+          e a mais brilhante,<br/>
+          guarda o endereço do teu sorriso.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção 4: Transição musical (música 2 inicia aqui) -->
+    <section class="section" id="section-transition">
+      <div class="transition-frame">
+        <div class="glitch-title" data-text="MAVILDE">MAVILDE</div>
+        <p class="transition-sub">uma nova melodia começa...</p>
+      </div>
+    </section>
+
+    <!-- Seção 5: Poesia 3 -->
+    <section class="section" id="section-poem3">
+      <div class="poem-card">
+        <span class="poem-tag">// universo.py</span>
+        <p class="poem-text">
+          O universo levou bilhões de anos<br/>
+          calculando cada variável —<br/>
+          a gravidade, a luz, o tempo —<br/>
+          só para que eu te amasse hoje.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção 6: Poesia 4 -->
+    <section class="section" id="section-poem4">
+      <div class="poem-card alt">
+        <span class="poem-tag">/* infinito.sql */</span>
+        <p class="poem-text">
+          SELECT amor<br/>
+          FROM meu_coração<br/>
+          WHERE destinatária = 'Mavilde'<br/>
+          LIMIT infinito;
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção 7: Final -->
+    <section class="section" id="section-final">
+      <div class="final-container">
+        <div class="heart-pulse">💚</div>
+        <h1 class="final-name" id="final-name"></h1>
+        <p class="final-caption">para sempre no meu código-fonte.</p>
+        <div class="binary-rain" id="binary-rain"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
